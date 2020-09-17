@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+section {
+  margin-bottom: 100px;
+}
+/* Navigation */
+.navigationBar {
+  padding: 0em 5em;
+}
+
+/* Presentation */
+
+@media only screen and (max-width: 600px){
+  #presentation{
+    margin-top: 50px;
+  }
+  .img-presentation{
+    margin-top: 20px;
+  }
+}
+
+.line-title::after {
+  content: "";
+  height: 2px;
+  width: 18vw;
+  background-color: #9a00f9;
+  display: inline-block;
+  margin-left: 5%;
+}
+
+/* About me */
+#about {
+  overflow-x: hidden;
+}
+.about-text {
+  font-size: 19px;
+  font-style: italic;
+}
+
+.about-image img {
+  display: block;
+  width: 15em;
+  height: 15em;
+  position: relative;
+  border-radius: 50%;
+}
+
+.about-skills i {
+  font-size: 22px;
+}
+.icon-js {
+  color: yellow;
+  background-size: 1em;
+  background-image: url("../img/backgroundBlack.png");
+}
+
+/* Projects */
+hr {
+  border: 0;
+  padding: 0.5px;
+  height: 5px;
+  width: 75%;
+  margin: auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(207, 13, 241, 0.75), rgba(0, 0, 0, 0));
+}
+/*----  Main Style  ----*/
+#cards_landscape_wrap-2 {
+  text-align: center;
+}
+#cards_landscape_wrap-2 .container {
+  padding-bottom: 100px;
+}
+#cards_landscape_wrap-2 a {
+  text-decoration: none;
+  outline: none;
+}
+#cards_landscape_wrap-2 .card-flyer {
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box {
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box img {
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease;
+  -ms-transition: all 0.9s ease;
+  width: 100%;
+  height: 200px;
+}
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img {
+  opacity: 1;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+}
+#cards_landscape_wrap-2 .card-flyer .text-box {
+  text-align: center;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container {
+  padding: 30px 18px;
+}
+#cards_landscape_wrap-2 .card-flyer {
+  background: #ffffff;
+  margin-top: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+}
+#cards_landscape_wrap-2 .card-flyer:hover {
+  background: #fff;
+  box-shadow: 0px 15px 26px #6d249bbb;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 50px;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.button{
+  padding: .8rem 2.2rem;
+  font: normal 500 16px/20px 'Roboto';
+  position: relative;
+  border: 3px solid transparent;
+  border-radius: 4px;
+}
+
+.button.primary-button{
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%); 
+  background-clip: padding-box;
+  color: white;
+  transition: background .6s ease;
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+.button.primary-button:hover{
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  background-clip: padding-box;
+  color: dark;
+}
+
+.button.primary-button::after{
+  position: absolute;
+  top: -2px; left: -2px;
+  bottom: -2px;  right: -2px;
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  content: ' ';
+  z-index: -1;
+  border-radius: 4px;
+}
+.button.secondary-button::after{
+  position: absolute;
+  top: -2px; left: -2px;
+  bottom: -2px;  right: -2px;
+  content: ' ';
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.button.secondary-button{
+  border: 1px solid  white;
+  color:  #9a00f9;
+  background: white;
+  background-clip: padding-box;
+  transition: background .6s ease;
+}
+
+.button.secondary-button:hover{
+  border: 1px solid transparent;
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  color: whitesmoke;
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
